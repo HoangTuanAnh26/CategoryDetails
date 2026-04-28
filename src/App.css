@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-header {
+  position: fixed;   /* 🔥 cố định */
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 45px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  margin: 50px auto; 
+  z-index: 1000;
+} 
+
+.title-header {
+}
+
+.back-button {
+  position: absolute;
+  left: 20px;
+  color: white;
+  font-size: 55px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.banner-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  padding: 70px;
+}
+
+.banner-image {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.category-title {
+  font-size: 55px;
+}
+
+/* Lưới danh sách món ăn */
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Tạo 2 cột đều nhau */
+  gap: 15px;
+  padding: 15px;
+}
+
+/* Thẻ món ăn (Card) */
+.meal-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Tạo bóng đổ nhẹ cho đẹp */
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+.meal-title-container {
+  background-color: #ff5252; /* Nền màu đỏ giống mockup */
+  padding: 10px;
+  flex-grow: 1; /* Để phần đỏ phủ kín phần dưới thẻ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meal-title {
+  color: white;
+  font-size: 19px;
+  margin: 0;
+  text-align: center;
+}
+
+.app-footer {
+  width: 100%;
+  height: 100px;
+  background-color:grey;
+  color: white;
+  font-size: 45px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  margin-top:50px; 
+}
