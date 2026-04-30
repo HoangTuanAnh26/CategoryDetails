@@ -41,10 +41,10 @@ const CategoryDetails: React.FC = () => {
   return (
     <div className="category-container">
       {/* 1. Phần Header */}
-      <header className="app-header">
+      {/* <header className="app-header">
         <button className="back-button">←</button>
         <h1 className='title-header'>Food Recipe</h1>
-      </header>
+      </header> */}
 
       {/* 2. Phần Banner */}
       <section className="banner-section">
@@ -61,7 +61,7 @@ const CategoryDetails: React.FC = () => {
         {loading ? (
           <p>Đang tải ...</p>
         ) : (
-          meals.map((meal) => (
+          meals.slice(0, 10).map((meal) => (
 
             <div key={meal.idMeal} className="meal-card">
               <img
@@ -76,9 +76,9 @@ const CategoryDetails: React.FC = () => {
           ))
         )}
       </section>
-      <footer>
+      {/* <footer>
         <div className='app-footer'>2026/04/27 Category Details</div>
-      </footer>
+      </footer> */}
     </div>
   );
 };
