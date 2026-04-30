@@ -2,7 +2,8 @@
 * **Hiển thị màn hình Category Details**: Cho phép người dùng xem danh sách các món ăn thuộc một danh mục cụ thể.
 
 ## 2. Cấu trúc thư mục dự án (Folder Structure)
-* **components/**: Chứa các React component (Ví dụ: `CategoryDetails.tsx`).
+* **components/**: Chứa các file có thể tái sử dụng(Herader.tsx, Fooder.tsx).
+* **pages/**: Chứa các React component (Ví dụ: `CategoryDetails.tsx`).
 * **App.tsx**: Component chính, quản lý giao diện tổng thể và điều hướng.
 * **main.tsx**: Điểm khởi chạy (Entry point), render ứng dụng vào DOM.
 * **App.css**: File định nghĩa các phong cách giao diện (Styling).
