@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CategoryDetails from './pages/CategoryDetails';
-import Home from './pages/Home';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import CategoryDetails from './views/CategoryDetails/CategoryDetails';
+import Home from './views/Home/Home';
+
 
 
 const App: React.FC = () => {
@@ -12,11 +13,10 @@ const App: React.FC = () => {
     <Router>
       <div className="app-wrapper">
         <Header />
-
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/category" element={<CategoryDetails />} />
+            <Route path="/category/:categoryName" element={<CategoryDetails />} />
           </Routes>
         </main>
         <Footer />
@@ -27,4 +27,4 @@ const App: React.FC = () => {
 
 export default App;
 
-// Cần làm responsive 
+
